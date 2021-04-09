@@ -6,7 +6,7 @@ import Dashboard from './components/views/Dashboard/Dashboard';
 import Login from './components/views/Login/Login';
 import Tables from './components/views/Tables/Tables';
 import Booking from './components/views/Booking/Booking';
-import Event from './components/views/Event/Event';
+import SingleEvent from './components/views/SingleEvent/SingleEvent';
 import NewBooking from './components/views/NewBooking/NewBooking';
 import NewEvent from './components/views/NewEvent/NewEvent';
 import Waiter from './components/views/Waiter/Waiter';
@@ -36,7 +36,7 @@ const App = () => (
             <Route exact path={`/tables/booking/new`} component={NewBooking} />
             <Route exact path={`/tables/booking/:id`} component={Booking} />
             <Route exact path={`/tables/events/new`} component={NewEvent} />
-            <Route exact path={`/tables/events/:id`} component={Event} />
+            <Route exact path={`/tables/events/:id`} component={SingleEvent} />
             <Route exact path={`/waiter`} component={Waiter} />
             <Route exact path={`/waiter/order/new`} component={NewOrder} />
             <Route exact path={`/waiter/order/:id`} component={Order} />

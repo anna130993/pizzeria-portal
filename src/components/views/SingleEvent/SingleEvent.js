@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Event.module.scss';
+import styles from './SingleEvent.module.scss';
 
-const Event = ({match}) => {
+const SingleEvent = ({match}) => {
   const id = match.params.id;
 
   return (
@@ -13,9 +13,9 @@ const Event = ({match}) => {
   );
 };
 
-Event.propTypes = {
+SingleEvent.propTypes = {
   match: PropTypes.object,
 };
 
 
-export default Event;
+export default SingleEvent;
