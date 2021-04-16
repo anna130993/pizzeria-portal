@@ -40,7 +40,7 @@ export const fetchFromAPI = () => {
 export const changeStatusInAPI = (id, status) => {
   return (dispatch, getState) => {
     Axios
-      .put(`${api.url}/api/${api.tables}/${id}`, {status})
+      .patch(`${api.url}/api/${api.tables}/${id}`, {status})
       .then(res => {
         dispatch(changeStatus(res.data));
       })
