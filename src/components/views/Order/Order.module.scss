@@ -1,5 +1,20 @@
 @import '../../../styles/settings.scss';
 
 .component {
-  padding: $base-size;
+  padding: $base-size 0;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.formControl {
+  min-width: 15%;
+  margin: $base-size * 3;
+}
+
+.button {
+  padding: $base-size * 4;
 }

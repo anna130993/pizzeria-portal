@@ -1,20 +1,13 @@
 @import '../../../styles/settings.scss';
 
 .component {
-  padding: $base-size 0;
-}
-
-.dataGrid {
-  font-size: 20px;
-}
-
-.order {
   width: 100%;
   height: 100%;
   overflow-y: auto;
 }
 
-.orderItem {
+.orderParams {
   margin: 0;
   white-space: normal;
+  font-size: 12px;
 }
